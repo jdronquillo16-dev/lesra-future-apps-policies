@@ -1,0 +1,15 @@
+# Never commit actual app source code
+lib/
+android/
+ios/
+web/
+windows/
+linux/
+macos/
+test/
+pubspec.yaml
+*.iml
+.dart_tool/
+build/
+
+# Keep only legal documents
