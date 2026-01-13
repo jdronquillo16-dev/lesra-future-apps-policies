@@ -4,222 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LESRA Future Apps - Legal Documents</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .header {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .header h1 {
-            color: #2c3e50;
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .header p {
-            color: #7f8c8d;
-            font-size: 1.2rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .app-section {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .app-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 25px rgba(0,0,0,0.15);
-        }
-
-        .app-title {
-            color: #667eea;
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .app-description {
-            color: #666;
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-
-        .btn-privacy {
-            background: #667eea;
-            color: white;
-        }
-
-        .btn-privacy:hover {
-            background: #5568d3;
-            transform: scale(1.05);
-        }
-
-        .btn-terms {
-            background: #764ba2;
-            color: white;
-        }
-
-        .btn-terms:hover {
-            background: #663d8f;
-            transform: scale(1.05);
-        }
-
-        .about-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .about-section h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-
-        .about-section p {
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .contact-info {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .contact-info h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 2rem;
-            color: white;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-
-            .app-title {
-                font-size: 1.5rem;
-            }
-
-            .button-group {
-                flex-direction: column;
-            }
-
-            .btn {
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>LESRA Future Apps</h1>
-        <p>Legal Documents & Policies</p>
-    </div>
-
     <div class="container">
-        <!-- Testers Hub Section -->
-        <div class="app-section">
-            <h2 class="app-title">Testers Hub</h2>
-            <p class="app-description">
-                A community-driven platform connecting app developers with testers. Test apps, provide feedback,
-                and get your own apps discovered by real users.
-            </p>
-            <div class="button-group">
-                <a href="testershub/privacy-policy.html" class="btn btn-privacy">Privacy Policy</a>
-                <a href="testershub/terms-of-service.html" class="btn btn-terms">Terms of Service</a>
-            </div>
-        </div>
+        <header>
+            <h1>LESRA Future Apps</h1>
+            <p class="subtitle">Legal Documents & Policies</p>
+        </header>
 
-        <!-- Seafarer AI Section -->
-        <div class="app-section">
-            <h2 class="app-title">Seafarer AI Assistant</h2>
-            <p class="app-description">
-                Your maritime companion for navigation, communication, and productivity at sea.
-            </p>
-            <div class="button-group">
-                <a href="seafarer-ai-assistant/privacy-policy.html" class="btn btn-privacy">Privacy Policy</a>
-                <a href="seafarer-ai-assistant/terms-of-service.html" class="btn btn-terms">Terms of Service</a>
-            </div>
-        </div>
+        <main>
+            <section class="app-section">
+                <h2>Seafarer AI Assistant</h2>
+                <p>Your maritime companion for navigation, communication, and productivity at sea.</p>
+                <div class="links">
+                    <a href="seafarer-ai-assistant/privacy-policy.html">Privacy Policy</a>
+                    <a href="seafarer-ai-assistant/terms-of-service.html">Terms of Service</a>
+                </div>
+            </section>
 
-        <!-- About Section -->
-        <div class="about-section">
-            <h2>About LESRA Future Apps</h2>
-            <p>
-                We develop innovative applications to empower users worldwide. All our applications comply with
-                international data protection standards including GDPR, CCPA, and industry-specific requirements.
-            </p>
-        </div>
+             <section class="app-section">
+                <h2 class="app-title">Testers Hub</h2>
+                <p>A community-driven platform connecting app developers with testers. Test apps, provide feedback,
+                and get your own apps discovered by real users.</p>
+                <div class="links">
+                    <a href="testershub/privacy-policy.html">Privacy Policy</a>
+                    <a href="testershub/terms-of-service.html">Terms of Service</a>
+                </div>
+            </section>
+            
+            <section class="info-section">
+                <h3>About LESRA Future Apps</h3>
+                <p>We develop innovative applications to empower seafarers worldwide. All our applications comply with international data protection standards and maritime industry requirements.</p>
+            </section>
+            
+            <section class="info-section">
+                <h3>Contact</h3>
+                <p>For inquiries: <a href="mailto:jdronquillo16@gmail.com">jdronquillo16@gmail.com</a></p>
+            </section>
+        </main>
 
-        <!-- Contact Section -->
-        <div class="contact-info">
-            <h2>Contact</h2>
-            <p>For inquiries: <a href="mailto:jdronquillo46@gmail.com">jdronquillo46@gmail.com</a></p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2026 LESRA Future Apps. All rights reserved.</p>
+        <footer>
+            <p>&copy; 2026 LESRA Future Apps. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
