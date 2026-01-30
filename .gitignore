@@ -12,4 +12,32 @@ pubspec.yaml
 .dart_tool/
 build/
 
+# Security: Prevent API keys and secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.keystore
+*.jks
+google-services.json
+GoogleService-Info.plist
+firebase*.json
+*-key.json
+*-secret.json
+*credentials*.json
+*.config.js
+config.js
+secrets.*
+api-keys.*
+
+# IDE and system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
 # Keep only legal documents
