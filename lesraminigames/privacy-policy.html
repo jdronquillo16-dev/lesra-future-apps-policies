@@ -20,8 +20,8 @@
                 <p>
                     LESRA Future Apps ("we", "us", "our") develops and operates <strong>LESRA Mini Games</strong>
                     (the "App"), a casual mini-games collection available on Android via the Google Play Store.
-                    This Privacy Policy describes our data practices — specifically, that we do not collect,
-                    store, or process any personal data from users of this App on our own servers or systems.
+                    This Privacy Policy describes what data we and our integrated third-party SDKs collect,
+                    how it is used, and your rights as a user.
                 </p>
                 <p>
                     This Privacy Policy also serves as our <strong>Data Policy and Data Safety Summary</strong>
@@ -61,17 +61,39 @@
                     <li>Per-game high scores and total games played — stored on-device only, never transmitted</li>
                 </ul>
 
-                <h4 style="color:#1e3c72; margin: 12px 0 8px;">3.2 What We Do NOT Collect</h4>
+                <h4 style="color:#1e3c72; margin: 12px 0 8px;">3.2 Firebase Analytics — Automatically Collected Data</h4>
+                <p>
+                    The App integrates <strong>Firebase Analytics</strong> (Google LLC) solely to track
+                    install conversion events for Google Ads campaigns — specifically the
+                    <code>first_open</code> event, which is fired automatically the first time the App
+                    is launched after installation. This allows us to measure the effectiveness of paid
+                    user acquisition campaigns.
+                </p>
+                <p>Firebase Analytics automatically collects the following non-personal, aggregate data:</p>
+                <ul style="margin-left: 20px; color: #555; margin-bottom: 12px;">
+                    <li>App Instance ID (a randomly generated, anonymous identifier — not linked to your identity)</li>
+                    <li>App version, device model, and Android OS version</li>
+                    <li>Country and language (derived from device locale, not GPS)</li>
+                    <li><code>first_open</code> timestamp — the moment the app is first launched</li>
+                    <li>Basic session information (session start, session duration)</li>
+                </ul>
+                <p>
+                    This data is transmitted to Google's servers and governed by
+                    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+                    We do not have access to individual-level data — only aggregated, anonymized analytics
+                    reports in the Firebase/Google Analytics dashboard.
+                </p>
+
+                <h4 style="color:#1e3c72; margin: 12px 0 8px;">3.3 What We Do NOT Collect</h4>
                 <ul style="margin-left: 20px; color: #555;">
                     <li>No names, email addresses, or contact information</li>
                     <li>No location or GPS data</li>
-                    <li>No device identifiers (collected by us)</li>
+                    <li>No device identifiers beyond what Firebase Analytics collects automatically (see Section 3.2)</li>
                     <li>No camera or microphone recordings</li>
-                    <li>No analytics or usage statistics transmitted to our servers</li>
-                    <li>No crash reports or diagnostic data transmitted to our servers</li>
+                    <li>No behavioral profiles or user-tracking beyond aggregate analytics</li>
                     <li>No biometric data of any kind</li>
-                    <li>No behavioral profiles or user-tracking data</li>
                     <li>No Google account or sign-in data — no Google Sign-In is implemented in this App</li>
+                    <li>No in-app purchase or payment data — the App is free with no purchases</li>
                 </ul>
             </div>
 
@@ -79,7 +101,7 @@
                 <h3>4. Device Permissions</h3>
                 <p>The App may request the following Android permission:</p>
                 <ul style="margin-left: 20px; color: #555; margin-bottom: 12px;">
-                    <li><strong>Internet access</strong> — required solely to allow Google AdMob to serve advertisements. This permission is not used by us to transmit any user data to our servers.</li>
+                    <li><strong>Internet access</strong> — required to allow Google AdMob to serve advertisements and Firebase Analytics to transmit anonymous analytics events (first_open, session data) to Google's servers.</li>
                 </ul>
                 <p>The App does <strong>NOT</strong> request or use the following permissions:</p>
                 <ul style="margin-left: 20px; color: #555;">
@@ -114,20 +136,25 @@
             </div>
 
             <div class="info-section">
-                <h3>6. No Cloud Backend</h3>
+                <h3>6. Firebase Analytics — Purpose and Data Use</h3>
                 <p>
-                    LESRA Future Apps does not operate any server, cloud database, or backend infrastructure
-                    for the LESRA Mini Games App. There is no data transmission between the App and our systems
-                    at any time.
+                    We use Firebase Analytics exclusively to measure the effectiveness of Google Ads
+                    user acquisition campaigns by tracking the <code>first_open</code> conversion event.
+                    This is industry-standard practice for mobile app marketing. The data collected is
+                    anonymized, aggregated, and never used to identify or profile individual users.
                 </p>
                 <p>
-                    The App functions entirely as a <strong>standalone local application</strong>.
-                    No internet connection is required to play any of the 50 mini-games; internet access
-                    is used only by the AdMob SDK for advertising purposes.
+                    Firebase Analytics does <strong>not</strong> collect: your name, email, phone number,
+                    precise location, photos, contacts, or any other personal data. The App Instance ID
+                    it assigns is random, anonymous, and cannot be used to identify you personally.
                 </p>
                 <p>
-                    No Firebase services, no Google Sign-In, and no third-party analytics SDKs are integrated
-                    into this App.
+                    You can opt out of analytics data collection at any time through:
+                    Android Settings → Google → Ads → Opt out of Ads Personalization.
+                </p>
+                <p>
+                    For more information on how Google processes analytics data:
+                    <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>
                 </p>
             </div>
 
@@ -156,6 +183,7 @@
                 <h4 style="color:#1e3c72; margin: 12px 0 8px;">Data Collected by Integrated Third-Party SDKs</h4>
                 <ul style="margin-left: 20px; color: #555;">
                     <li><strong>Google AdMob SDK</strong> — may collect advertising identifiers and device signals for the purpose of serving advertisements. Governed by Google's Privacy Policy.</li>
+                    <li><strong>Firebase Analytics SDK</strong> — collects App Instance ID, device/OS info, country, language, and app events (first_open, session_start) for aggregate analytics and Google Ads conversion measurement. No personally identifiable information is collected. Governed by Google's Privacy Policy and Firebase Privacy documentation.</li>
                 </ul>
 
                 <h4 style="color:#1e3c72; margin: 12px 0 8px;">Local Storage (On-Device Only)</h4>
@@ -211,6 +239,7 @@
                     <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
                     <li>Google Play Terms of Service: <a href="https://play.google.com/about/play-terms/">https://play.google.com/about/play-terms/</a></li>
                     <li>Google AdMob Policies: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+                    <li>Firebase Privacy Information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
                 </ul>
             </div>
 
