@@ -12,6 +12,8 @@ Repository for legal documents and policies for all LESRA Future Apps.
 - Testers Hub
 - Screen Time Rewards (KidTrack Pro)
 - Abakada - Filipino Alphabet for Kids
+- LESRA Mini Games
+- Scientific Calculator
 
 ## Contact
 For inquiries: jdronquillo46@yahoo.com

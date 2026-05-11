@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Scientific Calculator by LESRA Future Apps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0B1428 0%, #1A2A44 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .header .app-name { font-size: 1.3rem; opacity: 0.9; color: #A8D8A0; font-weight: 600; }
+        .header .meta { margin-top: 1rem; font-size: 0.95rem; opacity: 0.8; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
+        .summary-box {
+            background: white;
+            border-left: 4px solid #1A6EC7;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .summary-box h2 { color: #0B1428; margin-bottom: 1rem; font-size: 1.5rem; }
+        .summary-box ul { list-style: none; padding-left: 0; }
+        .summary-box li { padding: 0.45rem 0; padding-left: 2rem; position: relative; }
+        .summary-box li:before { content: "✅"; position: absolute; left: 0; }
+        .content {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .content h2 {
+            color: #0B1428;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #1A6EC7;
+        }
+        .content h2:first-child { margin-top: 0; }
+        .content h3 { color: #1A2A44; font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .content p { margin-bottom: 1rem; line-height: 1.8; }
+        .content ul, .content ol { margin: 1rem 0 1rem 2rem; }
+        .content li { margin-bottom: 0.5rem; }
+        .content a { color: #1A6EC7; text-decoration: none; word-break: break-all; }
+        .content a:hover { text-decoration: underline; }
+        .highlight-box {
+            background: #EBF4FF;
+            border-left: 4px solid #1A6EC7;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background: #FFF8E1;
+            border-left: 4px solid #FFC107;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .success-box {
+            background: #E8F5E9;
+            border-left: 4px solid #4CAF50;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .danger-box {
+            background: #FFEBEE;
+            border-left: 4px solid #F44336;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .back-button {
+            display: inline-block;
+            background: #1A2A44;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        .back-button:hover { background: #0B1428; transform: translateY(-2px); color: white; }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+        .data-table th {
+            background: #0B1428;
+            color: white;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        .data-table td {
+            padding: 0.65rem 0.75rem;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+        .data-table tr:nth-child(even) td { background: #f9f9f9; }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8rem; }
+            .container { padding: 0 1rem; }
+            .content { padding: 1.25rem; }
+            .data-table { font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <div class="app-name">&#128336; Scientific Calculator</div>
+        <div class="meta">
+            <strong>LESRA Future Apps</strong><br>
+            Last Updated: May 11, 2026 &nbsp;|&nbsp; Effective Date: May 11, 2026
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="../index.html" class="back-button">&#8592; Back to Legal Documents</a>
+
+        <!-- ── QUICK SUMMARY ──────────────────────────────────────── -->
+        <div class="summary-box">
+            <h2>&#128203; Quick Summary</h2>
+            <ul>
+                <li>All calculator data and history are stored <strong>locally on your device only</strong> — never uploaded</li>
+                <li>The private vault (photos, videos, notes) is stored in the app&rsquo;s private directory — hidden from the system gallery and file manager</li>
+                <li>Your vault PIN is stored as a <strong>SHA-256 hash</strong> using Android Keystore — we never see your PIN</li>
+                <li>Biometric authentication is handled entirely by the Android OS — we do not access your biometric data</li>
+                <li>Google Sign-In is <strong>optional</strong> and used only for subscription management</li>
+                <li>Google AdMob shows ads to non-subscribed users; AdMob may collect an advertising identifier</li>
+                <li>Firebase Analytics collects anonymous usage events (app open, feature use) — no personal data</li>
+                <li>We do <strong>NOT</strong> sell your data, upload your vault files, or transmit personal files anywhere</li>
+                <li>We are <strong>GDPR compliant</strong> — EU users have full data rights</li>
+                <li>This policy also serves as our <strong>Data Safety disclosure</strong> for Google Play</li>
+            </ul>
+        </div>
+
+        <!-- ── CONTENT ─────────────────────────────────────────────── -->
+        <div class="content">
+
+            <!-- 1 -->
+            <h2>1. Introduction</h2>
+            <p>
+                LESRA Future Apps (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) develops and operates the
+                <strong>Scientific Calculator</strong> mobile application (the &ldquo;App&rdquo;). This Privacy Policy
+                explains what information we collect, how we use it, and your rights regarding your data.
+            </p>
+            <p>
+                This Privacy Policy also serves as our <strong>Data Policy and Data Safety Summary</strong>
+                for Google Play Store compliance purposes.
+            </p>
+            <p>
+                <strong>By downloading, installing, or using the App, you agree to this Privacy Policy.</strong>
+                If you do not agree, please uninstall the App and discontinue use.
+            </p>
+
+            <!-- 2 -->
+            <h2>2. Data Controller</h2>
+            <p>
+                <strong>Developer / Publisher:</strong> LESRA Future Apps<br>
+                <strong>App Name:</strong> Scientific Calculator<br>
+                <strong>Package Name:</strong> com.lesra.scientificcalculator<br>
+                <strong>Developer Email:</strong> <a href="mailto:jdronquillo16@gmail.com">jdronquillo16@gmail.com</a><br>
+                <strong>Contact / Privacy Inquiries:</strong> <a href="mailto:jdronquillo46@gmail.com">jdronquillo46@gmail.com</a>
+            </p>
+
+            <!-- 3 -->
+            <h2>3. Information We Collect</h2>
+
+            <h3>3.1 Data Stored Locally on Your Device (Never Transmitted to Us)</h3>
+            <p>The following data is stored exclusively on your device and is never uploaded to our servers:</p>
+            <table class="data-table">
+                <tr>
+                    <th>Data</th>
+                    <th>Purpose</th>
+                    <th>Storage</th>
+                </tr>
+                <tr>
+                    <td>Calculation history (last 20 entries)</td>
+                    <td>Display recent calculations</td>
+                    <td>SharedPreferences (local)</td>
+                </tr>
+                <tr>
+                    <td>Pinned calculations</td>
+                    <td>User-bookmarked results</td>
+                    <td>SharedPreferences (local)</td>
+                </tr>
+                <tr>
+                    <td>6-digit vault PIN (SHA-256 hash only)</td>
+                    <td>Authenticate vault access</td>
+                    <td>flutter_secure_storage (Android Keystore)</td>
+                </tr>
+                <tr>
+                    <td>Decoy PIN hash (optional)</td>
+                    <td>Secondary security layer</td>
+                    <td>flutter_secure_storage (Android Keystore)</td>
+                </tr>
+                <tr>
+                    <td>Biometric unlock preference</td>
+                    <td>Enable/disable fingerprint/face unlock</td>
+                    <td>flutter_secure_storage (local)</td>
+                </tr>
+                <tr>
+                    <td>Auto-lock timeout setting</td>
+                    <td>Auto-lock vault after inactivity</td>
+                    <td>SharedPreferences (local)</td>
+                </tr>
+                <tr>
+                    <td>Private vault photos</td>
+                    <td>Hidden photo storage</td>
+                    <td>App private directory (not accessible by gallery)</td>
+                </tr>
+                <tr>
+                    <td>Private vault videos</td>
+                    <td>Hidden video storage</td>
+                    <td>App private directory (not accessible by gallery)</td>
+                </tr>
+                <tr>
+                    <td>Private vault notes</td>
+                    <td>Private text notes</td>
+                    <td>App private directory (local)</td>
+                </tr>
+                <tr>
+                    <td>Google account name, email, photo URL (if signed in)</td>
+                    <td>Display account info; subscription management</td>
+                    <td>SharedPreferences (local)</td>
+                </tr>
+                <tr>
+                    <td>Subscription status</td>
+                    <td>Determine ad-free access</td>
+                    <td>SharedPreferences + Google Play (verified by Play)</td>
+                </tr>
+                <tr>
+                    <td>App theme and UI preferences</td>
+                    <td>User customization</td>
+                    <td>SharedPreferences (local)</td>
+                </tr>
+            </table>
+
+            <h3>3.2 Data Collected by Third-Party Services</h3>
+            <p>
+                The App integrates with the following third-party services that may collect data under their
+                own privacy policies. See Section 5 for full details.
+            </p>
+            <ul>
+                <li><strong>Google AdMob</strong> — may collect advertising identifier and device info to serve ads</li>
+                <li><strong>Firebase Analytics</strong> — collects anonymous usage events (see Section 5.3)</li>
+                <li><strong>Google Sign-In</strong> — accesses name, email, and profile photo if you choose to sign in</li>
+                <li><strong>Google Play Billing</strong> — processes subscription payments (we receive no payment details)</li>
+            </ul>
+
+            <h3>3.3 Data We Do NOT Collect</h3>
+            <div class="success-box">
+                <strong>The following data is NEVER collected, uploaded, or transmitted by us:</strong>
+                <ul style="margin-top: 0.5rem;">
+                    <li>&#10060; Your vault files (photos, videos, notes) — stored on-device only, never uploaded</li>
+                    <li>&#10060; Your actual vault PIN — only a one-way SHA-256 hash is stored locally</li>
+                    <li>&#10060; Biometric data (fingerprint, face) — handled entirely by the Android OS</li>
+                    <li>&#10060; Location or GPS data</li>
+                    <li>&#10060; Contacts, SMS, or call logs</li>
+                    <li>&#10060; Device microphone or call recording</li>
+                    <li>&#10060; Health or financial data</li>
+                </ul>
+            </div>
+
+            <!-- 4 -->
+            <h2>4. How We Use Your Data</h2>
+            <ul>
+                <li><strong>Calculator functionality:</strong> History and pinned results stored locally for display</li>
+                <li><strong>Vault authentication:</strong> Hashed PIN verified locally — no server call required</li>
+                <li><strong>Subscription enforcement:</strong> Subscription status checked via Google Play to disable ads</li>
+                <li><strong>Analytics:</strong> Anonymous event data used to understand feature usage and improve the App</li>
+                <li><strong>Ads:</strong> AdMob serves ads to non-subscribed users based on advertising preferences</li>
+            </ul>
+
+            <!-- 5 -->
+            <h2>5. Third-Party Services</h2>
+
+            <h3>5.1 Google AdMob</h3>
+            <p>
+                We display banner, interstitial, and rewarded video advertisements through Google AdMob.
+                AdMob may collect your device&rsquo;s advertising identifier (GAID) and other device signals
+                to deliver targeted ads.
+            </p>
+            <p>
+                <strong>Ads are not shown to subscribed users.</strong><br>
+                To opt out of personalized ads: <em>Google Settings &rarr; Ads &rarr; Opt out of Ads Personalization</em><br>
+                AdMob Privacy Policy: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a>
+            </p>
+
+            <h3>5.2 Google Play Billing</h3>
+            <p>
+                Subscription payments ($2.00/month) are processed entirely by Google Play. We do not
+                receive, store, or process any payment card or financial information. All billing is
+                governed by Google&rsquo;s terms.<br>
+                Google Play Terms: <a href="https://play.google.com/about/play-terms/" target="_blank">https://play.google.com/about/play-terms/</a>
+            </p>
+
+            <h3>5.3 Firebase Analytics (Google)</h3>
+            <p>We use Firebase Analytics to track the following anonymous events:</p>
+            <table class="data-table">
+                <tr>
+                    <th>Event</th>
+                    <th>What It Records</th>
+                    <th>Personal Data?</th>
+                </tr>
+                <tr>
+                    <td>app_open</td>
+                    <td>App launched</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>locker_open</td>
+                    <td>Private vault accessed</td>
+                    <td>No (no file content)</td>
+                </tr>
+                <tr>
+                    <td>ad_impression</td>
+                    <td>Ad displayed</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>subscribe_attempt</td>
+                    <td>Subscribe button tapped</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>login</td>
+                    <td>Google Sign-In completed</td>
+                    <td>No (method only)</td>
+                </tr>
+            </table>
+            <p>
+                All analytics data is aggregated and anonymous. No vault contents, files, or personal
+                identifiers are included.<br>
+                Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a>
+            </p>
+
+            <h3>5.4 Google Sign-In</h3>
+            <p>
+                Google Sign-In is <strong>optional</strong>. If you choose to sign in, we receive your
+                Google account name, email address, and profile photo URL. This information is stored
+                <strong>locally on your device only</strong> and is used solely to display your account
+                details and associate your Google Play subscription.
+            </p>
+            <p>
+                We do not upload your Google account data to our servers.<br>
+                Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
+            </p>
+
+            <!-- 6 -->
+            <h2>6. Private Vault — How Your Files Are Protected</h2>
+            <div class="highlight-box">
+                The private vault is a hidden feature inside the App. Files stored in the vault are
+                located in the App&rsquo;s private directory and are <strong>never uploaded, transmitted,
+                or backed up to any server</strong> by us.
+            </div>
+            <ul>
+                <li><strong>Storage location:</strong> <code>getApplicationDocumentsDirectory()/locker/</code> — only accessible by this App</li>
+                <li><strong>Gallery/file manager exclusion:</strong> A <code>.nomedia</code> file is placed in all vault sub-directories, preventing Android&rsquo;s MediaStore from indexing vault files</li>
+                <li><strong>PIN security:</strong> Your 6-digit PIN is hashed with SHA-256 and stored in Android Keystore via <code>flutter_secure_storage</code> — the raw PIN is never stored anywhere</li>
+                <li><strong>Biometrics:</strong> Fingerprint and face recognition are processed entirely by the Android BiometricPrompt API — we receive only a pass/fail result, never biometric data</li>
+                <li><strong>Decoy PIN:</strong> A secondary PIN can show an empty vault — real files remain unaffected</li>
+                <li><strong>Auto-lock:</strong> Vault automatically locks after a configurable inactivity timeout</li>
+            </ul>
+            <div class="warning-box">
+                <strong>Important:</strong> If you uninstall the App, all vault files will be permanently
+                deleted along with the App&rsquo;s private directory. Back up important files before
+                uninstalling. We are not responsible for data loss due to uninstallation, device loss,
+                factory reset, or device failure.
+            </div>
+
+            <!-- 7 -->
+            <h2>7. Data Storage &amp; Retention</h2>
+            <h3>7.1 On-Device Data</h3>
+            <p>
+                All data described in Section 3.1 remains on your device for as long as the App is
+                installed. Uninstalling the App will delete all locally stored data, including vault files.
+            </p>
+            <h3>7.2 Firebase Analytics</h3>
+            <p>
+                Anonymous analytics events are retained by Firebase for up to 14 months by default,
+                per Google&rsquo;s retention policy. No personal data is included in these events.
+            </p>
+            <h3>7.3 Google Sign-In Session</h3>
+            <p>
+                Cached Google account name, email, and photo are stored locally and are deleted when
+                you sign out within the App or uninstall the App.
+            </p>
+            <h3>7.4 Data Deletion</h3>
+            <p>To delete your data:</p>
+            <ol>
+                <li>
+                    <strong>Vault files:</strong> Open the App &rarr; vault &rarr; delete files individually,
+                    or uninstall the App to delete all vault data
+                </li>
+                <li>
+                    <strong>Google account / analytics data:</strong> Email us at
+                    <a href="mailto:jdronquillo46@gmail.com">jdronquillo46@gmail.com</a>
+                    with subject &ldquo;Data Deletion Request&rdquo; — we will respond within 30 days
+                </li>
+            </ol>
+
+            <!-- 8 -->
+            <h2>8. Device Permissions</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Permission</th>
+                    <th>Why It Is Used</th>
+                </tr>
+                <tr>
+                    <td>READ_MEDIA_IMAGES / READ_MEDIA_VIDEO</td>
+                    <td>Import photos and videos from device gallery into the private vault</td>
+                </tr>
+                <tr>
+                    <td>READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE</td>
+                    <td>Import files on older Android versions (API &lt; 33)</td>
+                </tr>
+                <tr>
+                    <td>CAMERA</td>
+                    <td>Capture a photo directly into the vault from within the App</td>
+                </tr>
+                <tr>
+                    <td>USE_BIOMETRIC / USE_FINGERPRINT</td>
+                    <td>Optional fingerprint or face unlock for the private vault</td>
+                </tr>
+                <tr>
+                    <td>INTERNET</td>
+                    <td>Display ads (AdMob), Firebase Analytics, Google Sign-In, and Play Billing</td>
+                </tr>
+            </table>
+            <p>
+                The App does <strong>not</strong> request location, contacts, microphone, or SMS permissions.
+                Storage permissions are used <strong>only</strong> to import files you select &mdash; the
+                App does not scan or upload your device storage.
+            </p>
+
+            <!-- 9 -->
+            <h2>9. Data Security</h2>
+            <ul>
+                <li>&#128274; <strong>Android Keystore encryption</strong> — PIN hash stored using hardware-backed key storage</li>
+                <li>&#128274; <strong>App private directory</strong> — vault files inaccessible to other apps or system media scanners</li>
+                <li>&#128274; <strong>Code obfuscation</strong> — App compiled with <code>--obfuscate</code> and ProGuard to prevent reverse engineering</li>
+                <li>&#128274; <strong>TLS/SSL encryption</strong> — all network traffic (AdMob, Firebase, Google Sign-In) is encrypted in transit</li>
+            </ul>
+            <div class="warning-box">
+                <strong>Security Notice:</strong> Do not install the App on rooted or compromised devices.
+                A rooted device can bypass Android security protections and may allow other apps or processes
+                to access the App&rsquo;s private directory. We are not responsible for data exposure on
+                rooted or tampered devices.
+            </div>
+
+            <!-- 10 -->
+            <h2>10. GDPR Compliance (EU Users)</h2>
+            <p>
+                If you are located in the European Union or European Economic Area, you have the following
+                rights under the General Data Protection Regulation (GDPR):
+            </p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request a summary of any data we hold about you</li>
+                <li><strong>Right to Rectification:</strong> Request correction of inaccurate personal data</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of your data (&ldquo;right to be forgotten&rdquo;)</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a machine-readable format</li>
+                <li><strong>Right to Object:</strong> Object to data processing for direct marketing</li>
+                <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for ad personalization at any time</li>
+            </ul>
+            <p>
+                To exercise any of these rights, contact us at:
+                <a href="mailto:jdronquillo46@gmail.com">jdronquillo46@gmail.com</a><br>
+                We will respond within <strong>30 days</strong>.
+            </p>
+
+            <!-- 11 -->
+            <h2>11. Children&rsquo;s Privacy (COPPA)</h2>
+            <p>
+                The App is rated <strong>Teen (13+)</strong> on Google Play. The private vault feature
+                is intended for adult personal use.
+            </p>
+            <ul>
+                <li>We do <strong>not</strong> knowingly collect personal information from children under the age of 13</li>
+                <li>If you are a parent or guardian and believe your child under 13 has used this App, please contact us immediately at <a href="mailto:jdronquillo46@gmail.com">jdronquillo46@gmail.com</a></li>
+                <li>We will delete any data associated with a child under 13 promptly upon notification</li>
+            </ul>
+
+            <!-- 12 -->
+            <h2>12. Google Play Data Safety Disclosure</h2>
+            <p>The following summarizes our Data Safety form responses for Google Play:</p>
+            <table class="data-table">
+                <tr>
+                    <th>Category</th>
+                    <th>Collected?</th>
+                    <th>Shared?</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td>Name, Email (Google Sign-In)</td>
+                    <td>Optional</td>
+                    <td>No (local only)</td>
+                    <td>Account display, subscription</td>
+                </tr>
+                <tr>
+                    <td>App interactions / usage data</td>
+                    <td>Yes (anonymous)</td>
+                    <td>Firebase (Google) — anonymized</td>
+                    <td>Analytics, app improvement</td>
+                </tr>
+                <tr>
+                    <td>Advertising ID</td>
+                    <td>By AdMob SDK</td>
+                    <td>Google AdMob</td>
+                    <td>Ad delivery</td>
+                </tr>
+                <tr>
+                    <td>Photos / Videos / Notes</td>
+                    <td>On-device only</td>
+                    <td>Never</td>
+                    <td>Private vault storage</td>
+                </tr>
+                <tr>
+                    <td>Payment info</td>
+                    <td>No (Google Play handles)</td>
+                    <td>No</td>
+                    <td>Subscription processing by Google</td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Contacts / SMS / Calls</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Biometric data</td>
+                    <td>No (Android OS handles)</td>
+                    <td>No</td>
+                    <td>Vault biometric unlock (OS-level)</td>
+                </tr>
+            </table>
+
+            <!-- 13 -->
+            <h2>13. Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. Material changes will be communicated
+                via an in-app notification or an updated &ldquo;Last Updated&rdquo; date at the top of
+                this page. Continued use of the App after changes constitutes acceptance of the revised policy.
+            </p>
+            <p>
+                We encourage you to review this Privacy Policy periodically.
+            </p>
+
+            <!-- 14 -->
+            <h2>14. Contact Us</h2>
+            <p>
+                For privacy questions, data requests, or concerns, contact us:
+            </p>
+            <p>
+                <strong>LESRA Future Apps</strong><br>
+                &#128231; Privacy / Support Email: <a href="mailto:jdronquillo46@gmail.com">jdronquillo46@gmail.com</a><br>
+                We aim to respond within <strong>3&ndash;5 business days</strong>.
+            </p>
+
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 LESRA Future Apps. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="../index.html" style="color: #1A6EC7;">Back to All Policies</a> &nbsp;|&nbsp;
+                <a href="terms-of-service.html" style="color: #1A6EC7;">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
