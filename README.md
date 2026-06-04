@@ -14,9 +14,14 @@ Repository for legal documents and policies for all LESRA Future Apps.
 - Abakada - Filipino Alphabet for Kids
 - LESRA Mini Games
 - Scientific Calculator
+- Math Cards for Kids
 
 ## Contact
-For inquiries: jdronquillo46@yahoo.com
+For inquiries: jdronquillo46@gmail.com
+Developer account email: jdronquill16@gmail.com
+
+## Repository
+https://github.com/jdronquillo16-dev/lesra-future-apps-policies
 
 ## Website
 https://jdronquillo16-dev.github.io/lesra-future-apps-policies/
