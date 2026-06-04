@@ -18,7 +18,7 @@ Repository for legal documents and policies for all LESRA Future Apps.
 
 ## Contact
 For inquiries: jdronquillo46@gmail.com
-Developer account email: jdronquill16@gmail.com
+Developer account email: jdronquillo16@gmail.com
 
 ## Repository
 https://github.com/jdronquillo16-dev/lesra-future-apps-policies
