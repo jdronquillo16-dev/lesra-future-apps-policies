@@ -20,6 +20,19 @@ Example:
 - `by LESRA Future Apps`
 - `Last Updated: May 11, 2026 | Effective Date: May 11, 2026`
 
+## Default Terms of Service Header Format (All New Apps)
+Use this opening header pattern in each app's `terms-of-service.html`:
+- Line 1: `Terms of Service`
+- Line 2: `[App emoji] [App Name]`
+- Line 3: `by LESRA Future Apps`
+- Line 4: `Last Updated: [Month DD, YYYY] | Effective Date: [Month DD, YYYY]`
+
+Example:
+- `Terms of Service`
+- `🕐 Scientific Calculator`
+- `by LESRA Future Apps`
+- `Last Updated: May 11, 2026 | Effective Date: May 11, 2026`
+
 ## Apps
 - Seafarer AI Assistant
 - Testers Hub
