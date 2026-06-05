@@ -172,12 +172,21 @@
                 <li>We do NOT use advertising identifiers, behavior trackers, or analytical profiling.</li>
             </ul>
 
+            <h2>4. Mixed Audience & Advertising</h2>
+            <p>
+                <strong>Little Lingo</strong> is a general-audience educational application that appeals to both children (5 & under, 6-8, 9-12) and adults. To ensure a safe experience for all users while maintaining the App's availability, we implement the following advertising and safety measures:
+            </p>
             <div class="highlight-blue">
-                <h3>🚫 ZERO Advertisements Policy</h3>
-                <p>To provide a completely safe, hyper-focused learning atmosphere for young learners, our App does not contain any native or third-party advertisements. No trackers, cookies, or marketing banners are integrated.</p>
+                <h3>🛡️ Age Gate & Ad Compliance</h3>
+                <ul>
+                    <li><strong>Age Gate:</strong> When the App first boots up, users are presented with an Age Gate.</li>
+                    <li><strong>Child Users (Under 13):</strong> If a user indicates they are under 13, the App explicitly tags all ad requests as <strong>CHILD</strong> (TFCD/TFUA) via the <strong>Google TFAT API</strong>. This disables personalized advertising and behavioral tracking for these users.</li>
+                    <li><strong>Adult Users (13+):</strong> Users over 13 may see standard advertisements.</li>
+                    <li><strong>Ad-Free Experience:</strong> Advertisements are removed for all users who have an active Premium Subscription.</li>
+                </ul>
             </div>
 
-            <h2>4. How We Use Your Data</h2>
+            <h2>5. How We Use Your Data</h2>
             <p>
                 Any transient, local, or verified data is strictly used for the following educational and functional purposes:
             </p>
@@ -186,24 +195,27 @@
                 <li>To track milestones and streaks to motivate the child.</li>
                 <li>To manage, process, and respect premium subscription statuses linked to your Google Play account.</li>
                 <li>To deliver dynamic, children-approved answers safely using generative educational AI frameworks.</li>
+                <li>To serve advertisements in compliance with age-based safety requirements.</li>
             </ul>
 
-            <h2>5. Third-Party Services</h2>
+            <h2>6. Third-Party Services</h2>
             <p>
                 We rely only on standard, secure third-party modules that meet rigorous Children & Families guidelines:
             </p>
             <ul>
+                <li><strong>Google AdMob:</strong> Serves advertisements. For child users, ads are served in a non-personalized, COPPA-compliant manner.</li>
                 <li><strong>Google Play Services:</strong> Powers essential app stability, crash logs, and localized features.</li>
                 <li><strong>Google Play Billing & Google Sign-In:</strong> Handles premium checkouts and identity verification strictly accessed inside the Parental Gate for adults.</li>
                 <li><strong>Google Gemini API:</strong> Generates creative adaptive phonics prompts.</li>
             </ul>
 
-            <h2>6. Device Permissions</h2>
+            <h2>7. Device Permissions</h2>
             <p>
                 The App requests specific permission scopes strictly when necessary to enable key educational games:
             </p>
             <ul>
-                <li><strong>INTERNET:</strong> Required to query secure educational APIs (Gemini) and Google Billing subscription verification.</li>
+                <li><strong>INTERNET:</strong> Required to query secure educational APIs (Gemini), Google Billing subscription verification, and to serve advertisements via Google AdMob.</li>
+                <li><strong>AD_ID:</strong> Used by the Google AdMob SDK for adult users to provide relevant advertising experiences. This is disabled for users identified as children via the Age Gate.</li>
                 <li><strong>RECORD_AUDIO:</strong> Optional permission utilized solely for real-time educational speech validation. Audio input is analyzed locally, translated transiently, and instantly dismissed. <strong>No audio files are stored or transmitted.</strong></li>
             </ul>
 
