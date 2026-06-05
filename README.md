@@ -38,6 +38,7 @@ Example:
 - Testers Hub
 - Screen Time Rewards (KidTrack Pro)
 - Abakada - Filipino Alphabet for Kids
+- Little Lingo
 - LESRA Mini Games
 - Scientific Calculator
 - Math Cards for Kids
