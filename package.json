@@ -1,0 +1,8 @@
+{
+  "name": "lesra-policy-tools",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate-apps": "node scripts/validateApp.js"
+  }
+}

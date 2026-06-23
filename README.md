@@ -6,6 +6,7 @@ Repository for legal documents and policies for all LESRA Future Apps.
 - /[app-name]/ - Each app has its own folder
 - app-ads.txt - AdMob verification (required at root)
 - index.html - Main landing page
+ - APP_COMPLIANCE_CHECKLIST.md - onboarding checklist for new apps (required)
 
 ## Default Privacy Policy Header Format (All New Apps)
 Use this opening header pattern in each app's `privacy-policy.html`:
@@ -42,6 +43,7 @@ Example:
 - LESRA Mini Games
 - Scientific Calculator
 - Math Cards for Kids
+- 🪵 Woodcraft Tutorial
 
 ## Contact
 For inquiries: jdronquillo46@gmail.com
