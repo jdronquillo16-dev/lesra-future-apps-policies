@@ -6,8 +6,19 @@
   <title>Privacy Policy — Daily Motivation Widget</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <style>
-    .back-button{display:inline-block;margin:8px 0}
-    header.policy-header{background:linear-gradient(90deg,#0B1428,#1A2A44);color:#fff;padding:18px;border-radius:6px}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height:1.6; color:#333; background:#f5f7fa; }
+    .header { background: linear-gradient(135deg,#0B1428 0%,#1A2A44 100%); color:#fff; padding:2rem; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,0.08); }
+    .header h1{font-size:2rem;margin-bottom:0.25rem}
+    .header .subtitle{font-size:1.1rem;opacity:0.95}
+    .header .meta{margin-top:0.75rem;font-size:0.95rem;opacity:0.9}
+    .container{max-width:900px;margin:2rem auto;padding:0 1.5rem}
+    .summary-box{background:white;border-left:4px solid #1A2A44;border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+    .summary-box h2{color:#1A2A44;margin-bottom:0.75rem}
+    .content{background:white;border-radius:8px;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.06);margin-bottom:2rem}
+    .content h2{color:#2c3e50;margin-top:1rem;margin-bottom:0.75rem;border-bottom:2px solid #1A2A44;padding-bottom:0.35rem}
+    .back-button{display:inline-block;background:#1A2A44;color:#fff;padding:0.6rem 1rem;border-radius:8px;text-decoration:none;margin-bottom:1rem}
+    .warning-box{background:#fff3cd;border-left:4px solid #ffc107;padding:1rem;margin:1rem 0;border-radius:4px}
   </style>
 </head>
 <body>
@@ -22,62 +33,50 @@
     <a href="../index.html" class="back-button">&#8592; Back to Legal Documents</a>
 
     <main>
-      <section>
-    <pre style="white-space:pre-wrap;font-family:inherit">PRIVACY POLICY - DIWA DAILY WISDOM
-    Last Updated: June 24, 2026
+        <section>
+        <div class="container">
+          <div class="header">
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">Daily Motivation Widget</div>
+            <div class="meta">by <strong>LESRA Future Apps</strong><br>Last Updated: June 24, 2026 &nbsp;|&nbsp; Effective Date: June 24, 2026</div>
+          </div>
 
-    LESRA Future Apps ("we," "our," or "us") operates the "Daily Motivation Widget" mobile application (the "App"). We are committed to protecting and respecting your privacy. This Privacy Policy explains how we handle your information and comply with privacy standards, including the Children's Online Privacy Protection Act (COPPA), General Data Protection Regulation (GDPR), and Google Play Developer Policies.
+          <a href="../index.html" class="back-button">&#8592; Back to Legal Documents</a>
 
-    1. 100% OFFLINE-FIRST PHILOSOPHY & LOCAL DATA STORAGE
-    The App is designed with an offline-first philosophy.
-    - All of your learning progress, saved proverbs, favorite sentences, and typography personalization settings are stored 100% locally on your device in a secure private Room SQLite database.
-    - We do NOT maintain external database servers for your personal usage data, and we do not collect, harvest, or transmit any of your local proverbs or personal notes.
+          <div class="summary-box">
+            <h2>Quick Summary</h2>
+            <ul>
+              <li>Offline-first: all proverbs, favorites, and cached audio are stored locally.</li>
+              <li>Child-safe: Age Gate on first launch; non-personalized ads for children.</li>
+              <li>Optional Google Sign-In for subscription sync only.</li>
+              <li>Subscriptions handled via Google Play Billing; no payment data stored by us.</li>
+            </ul>
+          </div>
 
-    2. CHILDREN'S PRIVACY & COPPA COMPLIANCE (AGE GATE)
-    The App is a general-audience application that appeals to both children and adults. To protect young users and comply with COPPA and Google Play family guidelines, we implement an mandatory Age Gate upon the first boot of the application:
-    - If a user specifies an age under 13, the App immediately flags the user as a child.
-    - For children users, the App explicitly tags all Google AdMob ad requests with the Tag for Child-Directed Treatment (TFUA / TFAT) via the official Google Mobile Ads SDK APIs. This disables personalized behavioral advertising, ensures that only family-safe, non-personalized contextual ads are loaded, and restricts tracking.
-    - We do not knowingly collect any personal identifiable information (PII) from children under the age of 13.
+          <div class="content">
+            <h2>1. Introduction</h2>
+            <p>LESRA Future Apps ("we", "our", "us") operates Daily Motivation Widget. This Privacy Policy explains how we collect and use information.</p>
 
-    3. THIRD-PARTY SDK SERVICES & INTEGRATIONS
-    To support the application's ongoing development, cross-device synchronization, and secure transaction handling, we integrate the following industry-standard Google services, which may automatically collect certain device metadata:
+            <h2>2. Offline-first & Local Data</h2>
+            <p>The App stores all user content (proverbs, favorites, reflections, and cached audio) locally in a private SQLite/Room database. We do not maintain external servers for personal content.</p>
 
-    A. Google Mobile Ads (AdMob)
-    - Used to serve ads in the free ad-supported tier.
-    - Ad impressions and ad clicks are tracked automatically by the Google Mobile Ads SDK.
-    - For adult users, personalized ads are delivered. For children users under 13, child-directed (TFUA) compliance is strictly enforced. For child-directed users we disable personalized advertising and only serve non-personalized contextual ads.
+            <h2>3. Children's Privacy & Age Gate</h2>
+            <p>We implement an Age Gate on first launch. Users under 13 are treated as child-directed; AdMob is configured to serve non-personalized contextual ads and TFUA/TFAT is applied. We do not knowingly collect PII from children under 13.</p>
 
-    B. Google Analytics & Firebase Analytics
-    - Used to understand app performance, stability, and engagement.
-    - Tracks basic usage data automatically, including:
-      - App first opens and installs.
-      - Daily Active Users (DAU) and Monthly Active Users (MAU).
-      - Average session lengths and screen view counts.
-      - Crash reports and Application Not Responding (ANR) logs.
-    - All analytics data is anonymized and carries no personal identifiers.
+            <h2>4. Third-Party Services</h2>
+            <p>We use Google Mobile Ads (AdMob), Google Analytics/Firebase (anonymized), Google Play Billing (payments), and optional Google Sign-In (subscription sync). These services may collect data per their own policies.</p>
 
-    C. Google Play Billing (Google Play In-App Purchases)
-    - Handles our premium $3.00 USD/month Ad-Free Subscription.
-    - All transaction processing, payment instrument handling, and refunds are managed entirely and securely by Google Play. We do not have access to your credit card or financial accounts.
+            <h2>5. User Controls</h2>
+            <p>Restore purchases, revoke Google Sign-In, and clear local data via app settings or by uninstalling the app.</p>
 
-    D. Google Sign-In
-    - Allows users to securely sign in using their Google accounts to synchronize active subscription statuses across multiple devices (including mobile phones and Wear OS smartwatches).
-    - We only access basic account metadata (public profile name and email address) for sync verification purposes. This data is never sold or shared.
+            <h2>6. Security</h2>
+            <p>We use platform security but cannot guarantee absolute security of stored data.</p>
 
-    4. USER RIGHTS & EXERCISING CONTROL
-    - Restoring Purchases: If you change devices or re-install the App, you can instantly sync your active ad-free subscription status by tapping the "Restore Purchases" button in the Settings menu.
-    - Revoking Google Sign-In: You can disconnect your Google Account at any time by tapping the "Log Out" button in Settings.
-    - Data Deletion: Because your progress is stored entirely locally on your device, you can completely erase all your saved data, learning tracks, and local preferences at any time by clearing the App's storage or uninstalling the App.
-
-    5. SECURITY OF YOUR DATA
-    The security of your local data is highly important. We leverage native Android security measures to isolate the App's private SQLite database. However, please remember that no method of transmission over the internet, or method of electronic storage, is 100% secure.
-
-    6. CONTACT US
-    If you have any questions or feedback regarding this Privacy Policy, please contact us:
-
-    LESRA Future Apps
-    Email: jdronquillo46@gmail.com</pre>
-      </section>
+            <h2>7. Contact</h2>
+            <p>LESRA Future Apps<br>Email: <a href="mailto:jdronquillo46@gmail.com">jdronquillo46@gmail.com</a></p>
+          </div>
+        </div>
+        </section>
     </main>
     </main>
 

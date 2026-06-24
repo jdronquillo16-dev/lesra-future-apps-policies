@@ -35,26 +35,16 @@ Example:
 - `Last Updated: May 11, 2026 | Effective Date: May 11, 2026`
 
 ## Apps
+- Abakada - Filipino Alphabet for Kids
+- Daily Motivation Widget
+- LESRA Mini Games
+- Little Lingo
+- Math Cards for Kids
+- Scientific Calculator
+- Screen Time Rewards (KidTrack Pro)
 - Seafarer AI Assistant
 - Testers Hub
-- Screen Time Rewards (KidTrack Pro)
-- Abakada - Filipino Alphabet for Kids
-- Little Lingo
-- LESRA Mini Games
-- Scientific Calculator
-- Math Cards for Kids
 - 🪵 Woodcraft Tutorial
- - 🕯️ Diwa Daily Wisdom
- - Abakada - Filipino Alphabet for Kids
- - Daily Motivation Widget
- - LESRA Mini Games
- - Little Lingo
- - Math Cards for Kids
- - Scientific Calculator
- - Screen Time Rewards (KidTrack Pro)
- - Seafarer AI Assistant
- - Testers Hub
- - 🪵 Woodcraft Tutorial
 
 ## Contact
 For inquiries: jdronquillo46@gmail.com
