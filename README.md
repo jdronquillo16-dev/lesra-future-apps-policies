@@ -44,6 +44,7 @@ Example:
 - Scientific Calculator
 - Math Cards for Kids
 - 🪵 Woodcraft Tutorial
+ - 🕯️ Diwa Daily Wisdom
 
 ## Contact
 For inquiries: jdronquillo46@gmail.com
