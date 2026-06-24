@@ -45,6 +45,16 @@ Example:
 - Math Cards for Kids
 - 🪵 Woodcraft Tutorial
  - 🕯️ Diwa Daily Wisdom
+ - Abakada - Filipino Alphabet for Kids
+ - Daily Motivation Widget
+ - LESRA Mini Games
+ - Little Lingo
+ - Math Cards for Kids
+ - Scientific Calculator
+ - Screen Time Rewards (KidTrack Pro)
+ - Seafarer AI Assistant
+ - Testers Hub
+ - 🪵 Woodcraft Tutorial
 
 ## Contact
 For inquiries: jdronquillo46@gmail.com
