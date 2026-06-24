@@ -1,82 +1,487 @@
-# LESRA Future Apps &mdash; App Compliance & Policy Checklist
+# LESRA Future Apps — App Compliance & Policy Checklist
 
-Use this checklist whenever onboarding a new app or reviewing existing legal documents to ensure full compliance with Google Play Store policies, COPPA, GDPR, and LESRA developer standards.
-
----
-
-## 📋 Pre-Onboarding App Profile
-Before editing any policy files, answer these questions about the new app:
-1. **Target Audience:** Is this app directed at children (under 13), a general audience, or adults only?
-2. **Monetization:** Does it show ads? (If yes, we use Google AdMob). Does it offer premium upgrades/subscriptions? (If yes, we use Google Play Billing).
-3. **Data Collection:** Does it require user sign-in/accounts? Does it collect any personal info (email, name, location)? Or is all data stored locally on-device?
+Use this checklist whenever onboarding a new app or reviewing existing legal documents to ensure compliance with Google Play policies, privacy regulations, and LESRA Future Apps standards.
 
 ---
 
-## 🛠️ Checklist 1 — Privacy Policy (`privacy-policy.html`)
+# 🔍 Compliance Review Scope (Token-Efficient)
 
-### 1. Header & Metadata
-* [ ] **Exact Header Format:** Matches the standard 4-line opening block exactly:
-  - Line 1: `Privacy Policy`
-  - Line 2: `[App Emoji] [App Name]`
-  - Line 3: `by LESRA Future Apps`
-  - Line 4: `Last Updated: [Month DD, YYYY] | Effective Date: [Month DD, YYYY]`
-* [ ] **Back Link:** Includes `<a href="../index.html" class="back-button">&#8592; Back to Legal Documents</a>` right below the header.
-* [ ] **CSS Styling:** Embedded `<style>` block matches standard dark blue header gradient (`#0B1428` to `#1A2A44`) and clean modern layout.
+## Goal
 
-### 2. Advertising Disclosures (AdMob) &mdash; *Mandatory for 99% of apps*
-* [ ] **Automatic Collection:** Discloses that non-personalized advertising data is collected by Google AdMob under **Section 2.1 (Information Collected Automatically)**.
-* [ ] **Third-Party Disclosures:** Google AdMob is listed as a service provider under **Section 4 (Sharing and Disclosure)**.
-* [ ] **Quick Summary:** Summary section explicitly mentions using Google AdMob for ads.
+Gather only the information necessary to create accurate legal documents and maintain compliance.
 
-### 3. Subscription & Payments (Google Play Billing)
-* [ ] **Receipt Verification:** If premium billing is planned, Section 2 discloses purchase receipt processing via Google Play Billing.
-* [ ] **Third-Party Payments:** Google Play Billing is listed as a service provider under Section 4.
-* [ ] **Summary Box:** Quick Summary mentions optional premium subscriptions.
-
-### 4. Children's Privacy (COPPA & GDPR-K Compliance)
-* [ ] **Child-Directed Settings:** If the app targets children or is family-friendly:
-  - Discloses child-directed settings are active for AdMob (no personalized ads served to children).
-  - Explicitly states we do not knowingly collect personal information from children under 13.
-  - Mentions the presence of an **age gate** on first launch if the app serves mixed audiences.
-  - States that core functionality does not require account creation.
-
-### 5. Data Subject Rights & Contact Details
-* [ ] **GDPR Rights:** Includes Section 6 (Your Rights and Choices) detailing the rights of users (Access, Rectification, Deletion, Erasure, Data Portability).
-* [ ] **Correct Contact Emails:** 
-  - Developer Email: `jdronquillo16@gmail.com`
-  - Support/Privacy Email: `jdronquillo46@gmail.com`
+Do NOT perform repository-wide scans unless absolutely necessary.
 
 ---
 
-## ⚖️ Checklist 2 — Terms of Service (`terms-of-service.html`)
+## Priority 1 — Always Review
 
-### 1. Header & Metadata
-* [ ] **Exact Header Format:** Matches the standard 4-line opening block exactly:
-  - Line 1: `Terms of Service`
-  - Line 2: `[App Emoji] [App Name]`
-  - ... (rest of metadata)
-* [ ] **Back Link:** Includes back link button matching the standard styling.
+Review these files first:
 
-### 2. Licenses & Prohibitions
-* [ ] **Use License:** Grants a limited, non-exclusive, revocable license for personal, non-commercial use on Android.
-* [ ] **Premium Term:** If subscription-enabled, license includes terms for purchasing premium features through Google Play Billing.
-* [ ] **Prohibition of Circumvention:** Explicitly prohibits trying to bypass subscription or billing verification.
+* README.md
+* AndroidManifest.xml
+* privacy-policy.html
+* terms-of-service.html
+* app compliance checklist.md
+* Store listing metadata (if available)
 
-### 3. Legal Disclaimers (Strictly Enforced)
-* [ ] **As-Is Warranty Disclaimer:** Includes a prominent `warning-box` styled container highlighting that the App is provided "AS IS" and "AS AVAILABLE".
-* [ ] **Limitation of Liability:** Includes a prominent `warning-box` styled container capping liability at a maximum of $100.00.
+Purpose:
+
+* Identify app functionality
+* Identify permissions
+* Identify target audience
+* Identify monetization
+* Identify legal disclosures already present
 
 ---
 
-## 🚀 Checklist 3 — Repository Integration
+## Priority 2 — Review Only If Present
 
-* [ ] **Main Index (`index.html`):**
-  - Section added right before `</main>` and after the last existing `<section class="app-section">`.
-  - Class name is `<section class="app-section">`.
-  - Header has class `class="app-title"` and includes the correct app emoji.
-  - Features a clear one-line description of the app.
-  - Links to both `[foldername]/privacy-policy.html` and `[foldername]/terms-of-service.html`.
-* [ ] **Readme Document (`README.md`):**
-  - App name added to the lists under `## Apps`.
-* [ ] **Store Listing / AdMob verification (`app-ads.txt`):**
-  - Ensure the developer domain registration matches your AdMob setup.
+Review only when these files exist:
+
+* app/build.gradle
+* app/build.gradle.kts
+* project build.gradle
+* gradle/libs.versions.toml
+* google-services.json
+* Firebase configuration files
+* AdMob configuration files
+* Billing configuration files
+
+Purpose:
+
+* Detect Firebase usage
+* Detect AdMob usage
+* Detect Google Play Billing
+* Detect analytics SDKs
+* Detect third-party services
+
+---
+
+## Priority 3 — Review Source Code Only If Needed
+
+Inspect source code only when required information cannot be determined from:
+
+* README
+* Manifest
+* Gradle dependencies
+* Existing legal documents
+
+When source inspection is required, search only for:
+
+* Permissions
+* AdMob
+* Firebase
+* Billing
+* Authentication
+* Analytics
+* Notifications
+* AI services
+* Cloud storage
+* Location access
+* Camera access
+* Microphone access
+
+Do not inspect unrelated application logic.
+
+---
+
+## Files To Ignore
+
+Unless specifically requested, do NOT inspect:
+
+* node_modules/
+* build/
+* dist/
+* .gradle/
+* .idea/
+* .git/
+* generated code
+* assets/
+* screenshots/
+* icons/
+* images/
+* localization files
+* theme files
+* animation files
+* test files
+* CI/CD files
+
+---
+
+## Early Exit Rule
+
+If README, Manifest, Gradle dependencies, and existing legal documents provide sufficient information:
+
+* Stop searching.
+* Do not inspect additional files.
+* Proceed with compliance review and policy updates.
+
+---
+
+# 📋 Pre-Onboarding App Profile
+
+Before editing any policy files, answer these questions:
+
+1. Target Audience:
+
+   * Children (under 13)
+   * General Audience
+   * Adults Only
+
+2. Monetization:
+
+   * Ads (AdMob)
+   * Premium Upgrade
+   * Subscription
+   * Paid App
+   * No Monetization
+
+3. Data Collection:
+
+   * Account Required
+   * Anonymous Usage
+   * Local Storage Only
+   * Cloud Storage
+   * Personal Data Collection
+
+4. Permissions Used:
+
+   * Internet
+   * Notifications
+   * Camera
+   * Microphone
+   * Location
+   * Storage
+   * Other
+
+5. Third-Party Services:
+
+   * Google AdMob
+   * Firebase Analytics
+   * Firebase Crashlytics
+   * Google Play Billing
+   * Google Sign-In
+   * AI APIs
+   * Other Services
+
+---
+
+# 🛠️ Checklist 1 — Privacy Policy (privacy-policy.html)
+
+## 1. Header & Metadata
+
+* [ ] Header format is correct:
+
+  * Privacy Policy
+  * [App Emoji] [App Name]
+  * by LESRA Future Apps
+  * Last Updated and Effective Date
+
+* [ ] Includes back button:
+
+```html
+<a href="../index.html" class="back-button">&#8592; Back to Legal Documents</a>
+```
+
+* [ ] Styling matches LESRA legal page standards.
+
+---
+
+## 2. Accuracy Verification
+
+* [ ] Policy reflects actual app behavior.
+* [ ] No generic placeholder content.
+* [ ] No assumptions about features.
+* [ ] All statements verified through reviewed files.
+
+---
+
+## 3. Advertising Disclosures
+
+Required when ads are present.
+
+* [ ] AdMob disclosed in Information Collected Automatically.
+* [ ] AdMob disclosed in Third-Party Services.
+* [ ] Summary section mentions advertising.
+* [ ] Child-directed ad settings disclosed if applicable.
+
+---
+
+## 4. Subscriptions & Payments
+
+Required when Billing is present.
+
+* [ ] Google Play Billing disclosed.
+* [ ] Purchase verification disclosed.
+* [ ] Subscription disclosures included.
+* [ ] Premium features accurately described.
+
+---
+
+## 5. Data Collection
+
+* [ ] Personal information disclosures accurate.
+* [ ] Local storage usage disclosed.
+* [ ] Cloud storage usage disclosed.
+* [ ] Analytics disclosures accurate.
+* [ ] Authentication disclosures accurate.
+
+---
+
+## 6. Children's Privacy
+
+If child-directed or family-friendly:
+
+* [ ] COPPA disclosures included.
+* [ ] GDPR-K considerations included.
+* [ ] No knowingly collected child data.
+* [ ] Age gate disclosed if used.
+* [ ] No account requirement for core functionality unless necessary.
+
+---
+
+## 7. User Rights
+
+* [ ] Access
+* [ ] Correction
+* [ ] Deletion
+* [ ] Data Portability
+* [ ] Withdrawal of Consent
+
+---
+
+## 8. Contact Information
+
+* [ ] Developer Email:
+  [jdronquillo16@gmail.com](mailto:jdronquillo16@gmail.com)
+
+* [ ] Privacy Email:
+  [jdronquillo46@gmail.com](mailto:jdronquillo46@gmail.com)
+
+---
+
+# ⚖️ Checklist 2 — Terms of Service (terms-of-service.html)
+
+## 1. Header & Metadata
+
+* [ ] Header format is correct.
+* [ ] Back button included.
+* [ ] Styling matches LESRA legal standards.
+
+---
+
+## 2. License Terms
+
+* [ ] Limited license granted.
+* [ ] Android use specified.
+* [ ] Non-exclusive license.
+* [ ] Revocable license.
+
+---
+
+## 3. Premium Features
+
+If billing exists:
+
+* [ ] Premium access terms included.
+* [ ] Subscription terms included.
+* [ ] Billing terms included.
+* [ ] Anti-circumvention language included.
+
+---
+
+## 4. Legal Disclaimers
+
+* [ ] AS IS disclaimer included.
+* [ ] AS AVAILABLE disclaimer included.
+* [ ] Warning box styling used.
+
+---
+
+## 5. Limitation of Liability
+
+* [ ] Liability limitation included.
+* [ ] Warning box styling used.
+* [ ] Liability cap clearly stated.
+
+---
+
+# 🎨 Checklist 3 — Legal Page Design Consistency
+
+Review only legal documents.
+
+Compare:
+
+* privacy-policy.html
+* terms-of-service.html
+* legal index page
+* other legal pages
+
+---
+
+## Theme Consistency
+
+* [ ] Same color palette.
+* [ ] Same gradients.
+* [ ] Same shadows.
+* [ ] Same borders.
+* [ ] Same hover effects.
+
+---
+
+## Typography Consistency
+
+* [ ] Same font family.
+* [ ] Same heading styles.
+* [ ] Same paragraph styles.
+* [ ] Same font sizes.
+* [ ] Same spacing.
+
+---
+
+## Layout Consistency
+
+* [ ] Same container width.
+* [ ] Same card styles.
+* [ ] Same section spacing.
+* [ ] Same responsive breakpoints.
+
+---
+
+## Component Consistency
+
+* [ ] Same back button style.
+* [ ] Same warning box style.
+* [ ] Same info box style.
+* [ ] Same footer style.
+* [ ] Same link style.
+
+---
+
+## Responsive Design
+
+* [ ] Mobile friendly.
+* [ ] Tablet friendly.
+* [ ] Desktop friendly.
+* [ ] No horizontal scrolling.
+
+---
+
+# 🚀 Checklist 4 — Repository Integration
+
+## Main Index (index.html)
+
+* [ ] App section added.
+* [ ] Uses app-section class.
+* [ ] Uses app-title class.
+* [ ] Correct emoji used.
+* [ ] Description added.
+* [ ] Privacy Policy link added.
+* [ ] Terms of Service link added.
+
+---
+
+## README.md
+
+* [ ] App added to app list.
+* [ ] Description updated if required.
+
+---
+
+## app-ads.txt
+
+* [ ] AdMob configuration verified.
+* [ ] Developer information verified.
+
+---
+
+# 🛡️ Final Compliance Validation
+
+Before final approval:
+
+* [ ] Privacy Policy matches implementation.
+* [ ] Terms of Service matches implementation.
+* [ ] No contradictory statements.
+* [ ] No placeholder content.
+* [ ] Google Play compliant.
+* [ ] User Data Policy compliant.
+* [ ] Families Policy compliant if applicable.
+* [ ] COPPA compliant if applicable.
+* [ ] GDPR considerations reviewed.
+* [ ] CCPA considerations reviewed.
+* [ ] AdMob disclosures verified.
+* [ ] Billing disclosures verified.
+* [ ] Permissions disclosed where necessary.
+* [ ] Third-party services disclosed accurately.
+* [ ] Legal pages share the same design system.
+* [ ] Legal pages share the same fonts.
+* [ ] Legal pages share the same layout standards.
+* [ ] HTML is responsive and production-ready.
+
+# 📑 Legal Document Completeness Verification
+
+Before approving any Privacy Policy or Terms of Service document:
+
+## Contact Information
+
+* [ ] Developer name is present.
+* [ ] Developer name matches repository standards.
+* [ ] Developer email is present.
+* [ ] Privacy/support email is present.
+* [ ] Contact information is consistent across all legal documents.
+
+Example:
+
+Developer: LESRA Future Apps
+
+Support Email: jdronquillo46@gmail.com
+
+
+---
+
+## App Identification
+
+* [ ] App name appears in all legal documents.
+
+* [ ] App name exactly matches:
+
+  * Google Play listing
+  * README.md
+  * Repository documentation
+  * Legal documents
+
+* [ ] No outdated app names remain.
+
+Example:
+
+App: [App Name]
+
+---
+
+## Acknowledgment Section
+
+Terms of Service should include a final acknowledgment section.
+
+* [ ] Acknowledgment section exists.
+* [ ] References the Terms of Service.
+* [ ] References the Privacy Policy.
+* [ ] Includes parent/guardian acceptance language when the app targets children or families.
+
+Recommended Format:
+
+"By downloading, installing, or using the App, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and the Privacy Policy."
+
+For child-directed or family apps:
+
+"If you are a parent or guardian, you additionally agree to these Terms on behalf of the child using the App."
+
+---
+
+## Final Legal Review
+
+* [ ] Terms contain an acknowledgment section.
+* [ ] Privacy Policy and Terms reference each other where appropriate.
+* [ ] App name is consistent throughout all documents.
+* [ ] Developer information is consistent throughout all documents.
+* [ ] Contact information is consistent throughout all documents.
