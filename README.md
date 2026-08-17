@@ -39,6 +39,7 @@ Example:
 - Daily Motivation Widget
 - LESRA Mini Games
 - Little Lingo
+- 🐼 MandarinKids
 - Math Cards for Kids
 - Scientific Calculator
 - Screen Time Rewards (KidTrack Pro)
