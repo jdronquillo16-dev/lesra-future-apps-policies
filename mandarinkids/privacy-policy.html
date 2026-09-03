@@ -39,7 +39,7 @@
         <h1>Privacy Policy</h1>
         <div class="subtitle">🐼 MandarinKids</div>
         <div class="subtitle">by LESRA Future Apps</div>
-        <div class="meta">Last Updated: August 17, 2026 | Effective Date: August 17, 2026</div>
+        <div class="meta">Last Updated: September 3, 2026 | Effective Date: September 3, 2026</div>
     </div>
     <div class="container">
         <a href="../index.html" class="back-button">&larr; Back to All Policies</a>
@@ -49,6 +49,7 @@
                 <li>MandarinKids is a child-directed educational app (ages 6&ndash;12)</li>
                 <li>We comply with COPPA and the Google Play Families Policy</li>
                 <li>AdMob is configured for child-directed treatment &mdash; family-safe ads only, no interest-based advertising</li>
+                <li>Rewarded ads appear only after an activity finishes, and only with the player's consent</li>
                 <li>Zero ad mediation networks in this app</li>
                 <li>No account, login, or personal information is required from children</li>
                 <li>All learning progress is stored locally on the device</li>
@@ -62,21 +63,16 @@
 
             <h2>2. Information We Collect</h2>
             <h3>Advertising Data</h3>
-            <p>We use Google AdMob to display advertisements. Because the app is child-directed, AdMob is configured with <strong>child-directed treatment</strong>: ads are limited to family-safe content and are <strong>not</strong> personalized based on interests or behavior. AdMob may receive limited device and ad-request information necessary to display ads, but does not use persistent identifiers to build profiles about children.</p>
+            <p>We use Google AdMob to display <strong>rewarded advertisements</strong>. Rewarded ads are shown only after a lesson or game finishes, and only when the player explicitly chooses to watch one via a consent prompt (&ldquo;Yes&rdquo; or &ldquo;Not now&rdquo;). Because the app is child-directed, AdMob is configured with <strong>age-restricted (child) treatment</strong>: ads are limited to family-safe content and are <strong>not</strong> personalized based on interests or behavior. AdMob may receive limited device and ad-request information necessary to display ads, but does not use persistent identifiers to build profiles about children.</p>
             <h3>Child-Directed Advertising</h3>
-            <p>We set the following AdMob flags before the ads SDK initializes:</p>
-            <ul>
-                <li><code>TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE</code></li>
-                <li><code>TAG_FOR_UNDER_AGE_OF_CONSENT_TRUE</code></li>
-                <li><code>MAX_AD_CONTENT_RATING_G</code> (General audiences only)</li>
-            </ul>
+            <p>Before the ads SDK initializes, the app enables Google's consolidated age-restricted (child) treatment signal &mdash; the equivalent of the former child-directed treatment and under-age-of-consent flags &mdash; together with an ad content rating of &ldquo;G&rdquo; (General audiences only). No interest-based advertising or remarketing is used.</p>
             <p>No ad mediation networks (such as IronSource or Liftoff/Vungle) are used in this app.</p>
             <h3>Analytics Data</h3>
             <p>We use Firebase Analytics to understand aggregate, anonymous app usage &mdash; such as which lessons and mini-games are used and how often. We do not log personal identifiers or behavioral profiles tied to individual children.</p>
             <h3>Crash Reports</h3>
             <p>We use Firebase Crashlytics to collect crash reports so we can fix bugs. Crash reports may include device state, app version, and stack traces. No personal information is included in crash reports.</p>
             <h3>Purchase Information</h3>
-            <p>We use Google Play Billing for an optional subscription that removes advertisements. Purchase history is managed entirely by Google Play. We do not process or store payment information.</p>
+            <p>We use Google Play Billing for an optional 1-year premium subscription that removes all advertisements and unlocks all lessons, mini-games, and content. Purchase history is managed entirely by Google Play. We do not process or store payment information.</p>
             <h3>Fonts &amp; Audio</h3>
             <p>To display Chinese characters correctly, the app may fetch the Noto Sans SC font from Google's font service. Pronunciation audio is generated on-device using the system text-to-speech engine. Neither transmits personal information.</p>
 
