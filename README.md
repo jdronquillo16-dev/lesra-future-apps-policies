@@ -40,6 +40,7 @@ Example:
 - LESRA Mini Games
 - Little Lingo
 - 🐼 MandarinKids
+- 📚 HindiKids
 - Math Cards for Kids
 - Scientific Calculator
 - Screen Time Rewards (KidTrack Pro)
