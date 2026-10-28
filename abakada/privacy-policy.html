@@ -104,7 +104,7 @@
         <div class="subtitle">Abakada &ndash; Filipino Literacy for Kids</div>
         <div class="meta">
             by <strong>LESRA Future Apps</strong><br>
-            Last Updated: August 22, 2026 &nbsp;|&nbsp; Effective Date: August 22, 2026
+            Last Updated: October 28, 2026 &nbsp;|&nbsp; Effective Date: October 28, 2026
         </div>
     </div>
 
@@ -118,7 +118,8 @@
                 <li>All app preferences, progress, and rewards are stored locally on your device only</li>
                 <li>No data is ever transmitted to our servers &mdash; we operate no cloud backend for this App</li>
                 <li>Text-to-Speech uses your device&rsquo;s built-in engine &mdash; no audio data is sent anywhere by us</li>
-                <li>Ads are served by Google AdMob <strong>only</strong> (no mediation networks such as IronSource or Liftoff/Vungle) with child-directed, G-rated settings (COPPA compliant) &mdash; no native ads in game or lesson screens</li>
+                <li>Ads are served by Google AdMob <strong>only</strong> (no mediation networks such as IronSource or Liftoff/Vungle) with child-directed, G-rated settings (COPPA compliant) &mdash; a labeled banner outside gameplay plus optional rewarded ads the child or parent explicitly chooses to watch; all ads are removed by subscription</li>
+                <li>Parent voice recordings (microphone) stay on the device only &mdash; never uploaded or transmitted; recording is protected by a parental gate</li>
                 <li>Firebase services (Crashlytics, Analytics, Remote Config) collect limited anonymous technical data &mdash; no personal information</li>
                 <li>Optional subscriptions (to remove ads) are processed entirely by Google Play &mdash; we receive no payment or personal financial data</li>
                 <li>We do NOT sell any data (we have none to sell)</li>
@@ -173,6 +174,7 @@
                 <li>Stars earned and unlocked/equipped rewards (backgrounds and stickers)</li>
                 <li>Optional child display name or profile label, if entered by the parent or user &mdash; stored on-device only, never transmitted</li>
                 <li>Whether the first-launch onboarding tutorial has been completed</li>
+                <li>Parent voice recordings (Parent Voice feature) &mdash; short audio clips a parent records for word practice; stored on-device only, never uploaded, deletable in Settings</li>
             </ul>
 
             <h3>3.2 What We Do NOT Collect</h3>
@@ -180,7 +182,7 @@
                 <li>No names, email addresses, or contact information</li>
                 <li>No location or GPS data</li>
                 <li>No device identifiers (collected by us)</li>
-                <li>No camera or microphone recordings</li>
+                <li>No camera access at all; the microphone is used <strong>only</strong> for the Parent Voice feature &mdash; recordings stay on the device and are never uploaded, transmitted, or used for advertising or analytics (see Section 5)</li>
                 <li>No behavioral profiles or user-tracking data built by us</li>
                 <li>No biometric data of any kind</li>
             </ul>
@@ -193,24 +195,36 @@
                 sounds. All TTS processing occurs entirely <strong>on your device</strong>.
             </p>
             <div class="highlight-box">
-                We do not make audio recordings, transmit speech data, or receive any output from the
-                device&rsquo;s TTS engine. The TTS engine is part of the Android platform and is governed
-                by the terms of whoever provided the TTS engine (e.g., Google Text-to-Speech is governed
-                by Google&rsquo;s Privacy Policy).
+                We do not transmit speech data or receive any output from the device&rsquo;s TTS engine.
+                The TTS engine is part of the Android platform and is governed by the terms of whoever
+                provided the TTS engine (e.g., Google Text-to-Speech is governed by Google&rsquo;s Privacy
+                Policy). The only audio recordings in this App are parent-created Parent Voice recordings
+                (see Section 5), which stay entirely on the device.
             </div>
 
             <h2>5. Device Permissions</h2>
-            <p>The App may request the following Android permission:</p>
+            <p>The App may request the following Android permissions:</p>
             <ul>
                 <li>
                     <strong>Internet access</strong> &mdash; required solely to allow Google AdMob to serve
                     advertisements and for Firebase services (Crashlytics, Analytics, Remote Config) to
                     function. This permission is not used by us to transmit any personal user data.
                 </li>
+                <li>
+                    <strong>Microphone (RECORD_AUDIO)</strong> &mdash; used only by the optional Parent Voice
+                    feature, in which a parent or guardian records their own voice reading words aloud so
+                    the child hears a familiar voice during lessons and word practice. The microphone can
+                    only be used after an adult completes a parental gate. Recordings are processed and
+                    stored <strong>entirely on the device</strong>: they are never uploaded to Firebase or
+                    any server, never transmitted off the device, and are not used for advertising or
+                    analytics. Each recording is limited to 15 seconds. A parent can delete recordings at
+                    any time &mdash; individually per word, or all at once &mdash; in Settings &rarr;
+                    Boses ng Magulang (Parent Voice).
+                </li>
             </ul>
             <p>The App does <strong>NOT</strong> request or use the following permissions:</p>
             <ul>
-                <li>Camera or microphone access</li>
+                <li>Camera access</li>
                 <li>Location (GPS or network-based)</li>
                 <li>Access to Contacts, Call Logs, or Messages</li>
                 <li>Access to Files, Photos, or External Storage</li>
@@ -220,15 +234,30 @@
             <h2>6. Advertising &mdash; Google AdMob</h2>
             <p>
                 The App may display advertisements served by <strong>Google AdMob</strong> (a Google LLC
-                service). Advertisements appear only as a global banner at the bottom of the screen and
-                as interstitial ads shown no more than once every five minutes. <strong>No native ads
-                are displayed inside game or lesson screens.</strong>
+                service) in exactly two formats:
+            </p>
+            <ul>
+                <li>
+                    <strong>Labeled banner ads</strong> &mdash; a persistent banner clearly labeled
+                    &ldquo;ADVERTISEMENT&rdquo; at the bottom of the screen on menus and selection screens.
+                    The banner is automatically hidden during game and lesson screens so it never
+                    interrupts learning or gameplay.
+                </li>
+                <li>
+                    <strong>Optional rewarded ads</strong> &mdash; short video ads shown only when the
+                    child or parent explicitly chooses to watch one (e.g., to earn an extra star).
+                    A consent popup is always shown first; rewarded ads are never played automatically.
+                </li>
+            </ul>
+            <p>
+                <strong>No interstitial ads are used, and no native ads are displayed inside game or
+                lesson screens.</strong> Subscribing removes all advertisements (see Section 8).
             </p>
             <div class="warning-box">
                 <strong>Child-Directed Advertising:</strong> Because this App is specifically designed for
-                children, we configure AdMob with <strong>child-directed treatment
-                (TAG_FOR_CHILD_DIRECTED_TREATMENT = yes)</strong>, <strong>under-age-of-consent treatment
-                (TAG_FOR_UNDER_AGE_OF_CONSENT = yes)</strong>, and <strong>maximum ad content rating G</strong>.
+                children, we configure AdMob with <strong>child-directed / age-restricted treatment
+                (ageRestrictedTreatment = yes, per Google&rsquo;s current Mobile Ads API)</strong> and
+                <strong>maximum ad content rating G</strong>.
                 This means AdMob will not use behavioral tracking or interest-based advertising profiles
                 when serving ads in this App. All ads are non-personalized and G-rated only, in full
                 compliance with Google&rsquo;s Families Policy and COPPA.
@@ -236,8 +265,9 @@
                 ads are served exclusively by Google AdMob.
             </div>
             <p>
-                Interstitial ads are closeable within 5 seconds and are never shown immediately upon
-                app launch, in compliance with Google Play Families Policy requirements.
+                All ad formats comply with Google Play Families Policy requirements: banner ads are
+                clearly labeled and never shown immediately upon app launch, and rewarded ads require
+                an explicit, informed opt-in before playback.
             </p>
             <p>Relevant Google policies and resources:</p>
             <ul>
@@ -336,8 +366,10 @@
             <ul>
                 <li>
                     <strong>Google AdMob SDK</strong> &mdash; may collect advertising identifiers and device
-                    signals for the purpose of serving non-personalized, child-directed, G-rated advertisements.
-                    Governed by Google&rsquo;s Privacy Policy. Child-directed settings are applied.
+                    signals for the purpose of serving non-personalized, child-directed, G-rated
+                    advertisements (labeled banner outside gameplay and opt-in rewarded ads only &mdash;
+                    no interstitial or native ads). Governed by Google&rsquo;s Privacy Policy.
+                    Child-directed settings are applied.
                     <strong>No mediation networks</strong> (e.g., IronSource, Liftoff/Vungle) are used &mdash;
                     ads are served exclusively by Google AdMob.
                 </li>
@@ -366,6 +398,7 @@
                 <li>Daily streak count, best streak, and practice session count &mdash; stored on-device only; never transmitted</li>
                 <li>Stars earned, unlocked rewards, and equipped backgrounds/stickers &mdash; stored on-device only; never transmitted</li>
                 <li>Optional child display name &mdash; stored on-device only; never transmitted</li>
+                <li>Parent voice recordings (Parent Voice feature) &mdash; short audio clips recorded by a parent; stored on-device only; never uploaded or transmitted; deletable at any time in Settings</li>
             </ul>
 
             <h3>Data Security</h3>
@@ -393,8 +426,9 @@
                 <li>We collect <strong>no personal information</strong> from children or from parents on behalf of children</li>
                 <li>No registration, account creation, or login of any kind is required or available</li>
                 <li>Advertising is configured with mandatory child-directed settings and G-rated content only (COPPA-compliant non-personalized ads); <strong>no mediation networks</strong> are used &mdash; ads are served exclusively by Google AdMob</li>
-                <li>No native ads are placed inside game screens or lesson screens</li>
-                <li>Interstitial ads are always closeable and never shown on app launch</li>
+                <li>Banner ads are labeled and hidden during game and lesson screens; no native or interstitial ads are placed inside game or lesson screens</li>
+                <li>Rewarded ads are strictly opt-in &mdash; a consent popup is always shown first, and ads are never played automatically or on app launch</li>
+                <li>Parent voice recordings stay on the device only and are protected by a parental gate &mdash; they are never uploaded or used for advertising or analytics</li>
                 <li>No behavioral data, usage analytics tied to individuals, or any identifiable information is transmitted from the device by us</li>
                 <li>The App is designed to comply with the <strong>Children&rsquo;s Online Privacy Protection Act (COPPA)</strong>, the Philippine Data Privacy Act (Republic Act No. 10173), and all applicable children&rsquo;s privacy regulations</li>
             </ul>
@@ -424,6 +458,7 @@
             <ul>
                 <li><strong>Clear all local data:</strong> Android Settings &rarr; Apps &rarr; Abakada &rarr; Storage &rarr; Clear Data</li>
                 <li><strong>Uninstall the App:</strong> Removes all locally stored App data permanently</li>
+                <li><strong>Delete Parent Voice recordings:</strong> In the App &rarr; Settings &rarr; Boses ng Magulang (Parent Voice) &mdash; individually per word or all at once (behind the parental gate)</li>
                 <li><strong>Manage ad preferences:</strong> Through Google Settings &rarr; Ads on your device</li>
                 <li><strong>Reset advertising identifier:</strong> Through Android Settings &rarr; Google &rarr; Ads &rarr; Reset advertising ID</li>
                 <li><strong>Manage subscription:</strong> Through Google Play Store &rarr; Subscriptions</li>
